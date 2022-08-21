@@ -4,4 +4,9 @@
 * {
     font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
+
+}
+
+.card img {
+    height: 200px;
 }
