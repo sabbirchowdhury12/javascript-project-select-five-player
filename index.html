@@ -41,7 +41,7 @@
                                     <img src="images/tamim.jpg" class="card-img-top">
                                     <div class="card-body">
                                         <h5 class="card-title text-center">tamim iqbal</h5>
-                                        <a href="#" class="btn btn-primary w-100">selected</a>
+                                        <a onclick="addToCart(this)" class="btn btn-primary w-100">selected</a>
                                     </div>
                                 </div>
                             </div>
@@ -50,7 +50,7 @@
                                     <img src="images/mash.jpg" class="card-img-top">
                                     <div class="card-body">
                                         <h5 class="card-title text-center">Card title</h5>
-                                        <a href="#" class="btn btn-primary w-100">selected</a>
+                                        <a onclick="addToCart(this)" class="btn btn-primary w-100">selected</a>
                                     </div>
                                 </div>
                             </div>
@@ -59,7 +59,7 @@
                                     <img src="images/sakib.jpg" class="card-img-top">
                                     <div class="card-body">
                                         <h5 class="card-title text-center">Card title</h5>
-                                        <a href="#" class="btn btn-primary w-100">selected</a>
+                                        <a class="btn btn-primary w-100">selected</a>
                                     </div>
                                 </div>
                             </div>
@@ -68,7 +68,7 @@
                                     <img src="images/mahmadullah.jpeg" class="card-img-top">
                                     <div class="card-body">
                                         <h5 class="card-title text-center">Card title</h5>
-                                        <a href="#" class="btn btn-primary w-100">selected</a>
+                                        <a href="" class="btn btn-primary w-100">selected</a>
                                     </div>
                                 </div>
                             </div>
@@ -78,7 +78,7 @@
                                     <img src="images/babar (2).webp" class="card-img-top">
                                     <div class="card-body">
                                         <h5 class="card-title text-center">Card title</h5>
-                                        <a href="#" class="btn btn-primary w-100">selected</a>
+                                        <a href="#" onclick="addToCart(this)" class="btn btn-primary w-100">selected</a>
                                     </div>
                                 </div>
                             </div>
@@ -96,8 +96,16 @@
                     </div>
                     <!-- -------select and budget side------- -->
                     <div class="col-4">
+                        <div class="h-25 bg-black text-white p-2">
+                            <h3>selected-5</h3>
+                            <ol id="player-list">
 
-                        <div class="bg-black text-center text-white px-3 py-5">
+                            </ol>
+                        </div>
+
+                        <!-- -------------budget section---------  -->
+
+                        <div class="bg-black text-center text-white px-3 py-5 mt-5">
                             <h3 class="pb-3">Budget</h3>
                             <p>per player: <input id="per-player-input-field" type="text"
                                     class="bg-transparent border text-white w-50 ">
@@ -129,6 +137,7 @@
     "></script>
 
     <!---------- custom js link-------------- -->
+    <script src="js/select.js"></script>
     <script src="js/budget.js"></script>
 </body>
 
