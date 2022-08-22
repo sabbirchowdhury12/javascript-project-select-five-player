@@ -16,6 +16,8 @@
 
 <body class="bg-dark">
 
+
+    <!-- --------header section--------- -->
     <header>
         <div class="bg-black text-light
         text-center p-5">
@@ -27,10 +29,11 @@
         </div>
     </header>
 
+    <!-- ----------main section --------------  -->
     <main class="mt-5">
         <section>
             <div class="container">
-                <div class="row g-0 ">
+                <div class="row g-5">
                     <div class="col-8">
                         <div class="row g-3 ">
                             <div class="col-12 col-sm-6 col-lg-4">
@@ -91,8 +94,31 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">.col-6 .col-md-4</div>
+                    <!-- -------select and budget side------- -->
+                    <div class="col-4">
+
+                        <div class="bg-black text-center text-white px-3 py-5">
+                            <h3 class="pb-3">Budget</h3>
+                            <p>per player: <input id="per-player-input-field" type="text"
+                                    class="bg-transparent border text-white w-50 ">
+                            </p>
+                            <button id="calcalute-btn" class="btn btn-primary mb-3 w-100">calcuate</button>
+
+                            <p>Player expenses: $<span id="total-player-expenses">00</span></p>
+                            <p>manager : <input id="manager-input-field" class="bg-transparent border text-white w-50"
+                                    type="text"></p>
+                            <p>Coach: <input id="coach-input-field" class="bg-transparent border text-white w-50"
+                                    type="text"></p>
+                            <button id="calcalute-total-btn" class="btn btn-primary my-2 w-100">calculate total</button>
+                            <p><span class="float-start">total</span><span class="float-end">$<span
+                                        id="total-text-field">00</span></span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
+
+
+
             </div>
         </section>
     </main>
@@ -101,6 +127,9 @@
     <!-- ----------bootstrap js cdn link---------- -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js
     "></script>
+
+    <!---------- custom js link-------------- -->
+    <script src="js/budget.js"></script>
 </body>
 
 </html>
