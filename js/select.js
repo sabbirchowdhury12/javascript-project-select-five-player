@@ -1,31 +1,36 @@
 
 let playerArray = [];
 
-function player(array) {
+function playerList(array) {
 
-    const playerList = document.getElementById('player-list');
-    playerList.innerHTML = '';
+    const playerOrderList = document.getElementById('player-list');
+    playerOrderList.innerHTML = '';
 
     for (let i = 0; i < array.length; i++) {
 
-        const player = array[i];
+        const playerName = array[i];
         const listItem = document.createElement('li');
-        listItem.innerText = player
+        listItem.innerText = playerName
 
-        playerList.appendChild(listItem);
+        playerOrderList.appendChild(listItem);
     }
 
 }
-function addToCart(event) {
+function addPlayer(event) {
 
-    const btton = event.parentNode.children[1];
-    console.log(btton)
-    btton.setAttribute('disabled', '')
+    event.disabled = true;
 
     const playerName = event.parentNode.children[0].innerText
 
     playerArray.push(playerName);
-    player(playerArray);
+
+    if (playerArray.length > 5) {
+        alert("you have already selected 5 players")
+        event.disabled = false;
+        return;
+    }
+
+    playerList(playerArray);
 
 }
 

@@ -21,7 +21,16 @@ document.getElementById('calcalute-btn').addEventListener('click', function () {
 
     const perPlayerPrice = getInputValue('per-player-input-field');
 
-    const totalPlayerPrice = perPlayerPrice * 5;
+    if (isNaN(perPlayerPrice) || perPlayerPrice < 0) {
+        alert('Enter a valid Number');
+        return;
+    }
+
+    const PlayerOrderList = document.getElementById('player-list');
+    const playerListItem = PlayerOrderList.children;
+    const totalPlayer = playerListItem.length;
+
+    const totalPlayerPrice = perPlayerPrice * totalPlayer;
 
     setInnerTextValue('total-player-expenses', totalPlayerPrice);
 
@@ -33,6 +42,11 @@ document.getElementById('calcalute-total-btn').addEventListener('click', functio
 
     const managerPrice = getInputValue('manager-input-field');
     const coachPrice = getInputValue('coach-input-field');
+
+    if (isNaN(managerPrice) || managerPrice < 0 || isNaN(coachPrice) || coachPrice < 0) {
+        alert('Enter a valid Number');
+        return
+    }
 
     const totalPlayerTextField = document.getElementById('total-player-expenses');
     const totalPlayerExpenses = parseFloat(totalPlayerTextField.innerText)
