@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>select best player</title>
 
     <!-- ----------bootstrap css cdn link---------- -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
@@ -14,23 +14,19 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="bg-dark">
-
+<body>
 
     <!-- --------header section--------- -->
     <header>
         <div class="bg-black text-light
         text-center p-5">
-            <h1 class="fst-italic pt-5 pb-2">buy your most favourite cricketer</h1>
-            <p class="pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nam reprehenderit iusto
-                adipisci
-                pariatur
-                saepe quia reiciendis labore praesentium impedit?</p>
+            <h1 class="fst-italic pt-5 pb-2 text-light">contact with your favourite cricketer</h1>
+            <p class="pb-5">select your most five favourite player and contact with them for 3 years.</p>
         </div>
     </header>
 
     <!-- ----------main section --------------  -->
-    <main class="my-5">
+    <main class="bg-dark mt-5 pb-5">
         <section>
             <div class="container">
                 <div class="row g-5">
@@ -44,7 +40,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title text-center">tamim iqbal</h5>
                                         <button onclick="addPlayer(this)"
-                                            class="btn btn-primary w-100 ">selected</button>
+                                            class="btn btn-primary w-100  text-uppercase">select</button>
                                     </div>
                                 </div>
                             </div>
@@ -53,9 +49,9 @@
                                 <div class="card">
                                     <img src="images/mash.jpg" class="card-img-top">
                                     <div class="card-body">
-                                        <h5 class="card-title text-center">Mashrafee bin mortoza</h5>
+                                        <h5 class="card-title text-center">Mashrafee</h5>
                                         <button onclick="addPlayer(this)"
-                                            class="btn btn-primary w-100 ">selected</button>
+                                            class="btn btn-primary w-100  text-uppercase">select</button>
                                     </div>
                                 </div>
                             </div>
@@ -66,7 +62,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title text-center">Sakib al hasan</h5>
                                         <button onclick="addPlayer(this)"
-                                            class="btn btn-primary w-100 ">selected</button>
+                                            class="btn btn-primary w-100  text-uppercase">select</button>
                                     </div>
                                 </div>
                             </div>
@@ -75,9 +71,9 @@
                                 <div class="card">
                                     <img src="images/mahmadullah.jpeg" class="card-img-top">
                                     <div class="card-body">
-                                        <h5 class="card-title text-center">Mahmadullah riyad</h5>
+                                        <h5 class="card-title text-center">Mahmadullah </h5>
                                         <button onclick="addPlayer(this)"
-                                            class="btn btn-primary w-100">selected</button>
+                                            class="btn btn-primary w-100 text-uppercase">select</button>
                                     </div>
                                 </div>
                             </div>
@@ -86,9 +82,9 @@
                                 <div class="card">
                                     <img src="images/musfiq.jpg" class="card-img-top">
                                     <div class="card-body">
-                                        <h5 class="card-title text-center">musfiqur rahman</h5>
+                                        <h5 class="card-title text-center">musfiqur rahim</h5>
                                         <button onclick="addPlayer(this)"
-                                            class="btn btn-primary w-100">selected</button>
+                                            class="btn btn-primary w-100 text-uppercase">select</button>
                                     </div>
                                 </div>
                             </div>
@@ -99,14 +95,15 @@
                                     <div class="card-body">
                                         <h5 class="card-title text-center">Babar Azam</h5>
                                         <button onclick="addPlayer(this)"
-                                            class="btn btn-primary w-100">selected</button>
+                                            class="btn btn-primary w-100 text-uppercase">select</button>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                    <!-- -------selected section------- -->
+
+                    <!-- -------selected section card------- -->
                     <div class="col-6 col-sm-4">
                         <div class=" bg-black text-white p-3 text-center">
                             <h3>selected-5 players</h3>
@@ -115,8 +112,7 @@
                             </ol>
                         </div>
 
-                        <!-- -------------budget section---------  -->
-
+                        <!-- -------------budget section card---------  -->
                         <div class="bg-black text-center text-white px-3 py-5 mt-5">
                             <h3 class="pb-3">Budget</h3>
                             <p>per player: <input id="per-player-input-field" type="text"
@@ -134,15 +130,13 @@
                                         id="total-text-field">00</span></span>
                             </p>
                         </div>
+
                     </div>
                 </div>
-
-
 
             </div>
         </section>
     </main>
-
 
     <!-- ----------bootstrap js cdn link---------- -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js
@@ -151,6 +145,7 @@
     <!---------- custom js link-------------- -->
     <script src="js/select.js"></script>
     <script src="js/budget.js"></script>
+
 </body>
 
 </html>

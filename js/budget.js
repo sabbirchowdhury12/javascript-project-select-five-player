@@ -1,4 +1,4 @@
-// common function for get input value 
+// common function for get input value ---------
 
 function getInputValue(inputId) {
     const inputField = document.getElementById(inputId);
@@ -6,7 +6,7 @@ function getInputValue(inputId) {
     return inputValue;
 }
 
-// common function for set inner text value 
+// common function for set inner text value ---------
 
 function setInnerTextValue(textElementId, value) {
 
@@ -14,8 +14,7 @@ function setInnerTextValue(textElementId, value) {
     textField.innerText = value;
 }
 
-
-//add event listner on calculate button
+//add event listner on calculate button---------
 
 document.getElementById('calcalute-btn').addEventListener('click', function () {
 
@@ -26,6 +25,7 @@ document.getElementById('calcalute-btn').addEventListener('click', function () {
         return;
     }
 
+    // get number of players----------
     const PlayerOrderList = document.getElementById('player-list');
     const playerListItem = PlayerOrderList.children;
     const totalPlayer = playerListItem.length;
@@ -48,12 +48,10 @@ document.getElementById('calcalute-total-btn').addEventListener('click', functio
         return
     }
 
-    const totalPlayerTextField = document.getElementById('total-player-expenses');
-    const totalPlayerExpenses = parseFloat(totalPlayerTextField.innerText)
-
-    console.log(totalPlayerExpenses);
+    const totalPlayerExpensesTextField = document.getElementById('total-player-expenses');
+    const totalPlayerExpenses = parseFloat(totalPlayerExpensesTextField.innerText);
 
     const totalPrice = totalPlayerExpenses + managerPrice + coachPrice;
 
-    setInnerTextValue('total-text-field', totalPrice)
+    setInnerTextValue('total-text-field', totalPrice);
 })
